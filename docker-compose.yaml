@@ -8,7 +8,7 @@ services:
             target: ${ENV}
         container_name: todo-back
         environment:
-            - PORT=3000  # Port défini directement à 3000
+            - PORT=3001  # Port défini directement à 3000
             - ENV=local
             # - DB_HOST=${DB_HOST}
             # - DB_PORT=${DB_PORT}
@@ -17,6 +17,6 @@ services:
             # - DB_DBNAME=${DB_DBNAME}
             - DB_URL=${DB_URL}
         ports: 
-            - "3000:3000" 
+            - "3000:3001" 
         volumes:
             - ./src:/app/src
