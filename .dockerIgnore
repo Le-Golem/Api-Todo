@@ -1,0 +1,9 @@
+Dockerfile
+.dockerignore
+docker-compose.yml
+node_modules
+dist
+.git
+.cache
+public
+# If logs file is generated, please put it in here.
