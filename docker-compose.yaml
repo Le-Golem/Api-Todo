@@ -7,9 +7,9 @@ services:
             dockerfile: Dockerfile
         container_name: todo-back
         environment:
-            - PORT=3000  # Port défini directement à 3000
+            # - PORT=3000
             - DB_URL=${DB_URL}
-        ports: 
-            - "3000:3000" 
+        # ports: 
+        #     - "3000:3000" 
         volumes:
             - ./src:/app/src
