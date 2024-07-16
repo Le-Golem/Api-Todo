@@ -5,11 +5,9 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-            target: ${ENV}
         container_name: todo-back
         environment:
             - PORT=3000  # Port défini directement à 3000
-            - ENV=local
             - DB_URL=${DB_URL}
         ports: 
             - "3000:3000" 
